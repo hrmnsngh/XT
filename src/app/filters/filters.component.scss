@@ -1,0 +1,24 @@
+.underlined-label{    
+    display: block;
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
+    width: 100%;
+    text-align: center;
+    padding: 2px auto;
+    /* border-bottom: 1px solid !important; */
+    font-weight: bold;
+    /* padding: 3px; */
+    text-decoration: underline;
+}
+
+.btn-normal{
+    color: #fff;
+    background-color: #6fdf82;
+    border-color: #6fdf82;
+}
+
+.btn-success {
+    color: #fff;
+    background-color: #28A73E;
+    border-color: #28a745;
+}

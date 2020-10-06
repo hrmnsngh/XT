@@ -1,0 +1,20 @@
+<div class="card">
+  <img class="card-img-top" style="background-color: #F5F5F5;" height="150px" width="100%" [src]="eachLaunch.links.mission_patch" alt="Card image cap">
+  <div class="card-body" style="margin: 3px;">
+    <div class="card-title launch-title">
+    
+    <p class="card-text">{{eachLaunch.mission_name}} #{{eachLaunch.flight_number}}</p>
+     
+    </div>
+    <p class="card-text description" > Mission Ids: </p>
+    <ul>
+    <li *ngFor="let id of eachLaunch.mission_id">
+    {{id}}
+    </li>
+    </ul> 
+    <p class="card-text description"> Launch Year:{{eachLaunch.launch_year}}</p>
+    <p class="card-text description"> Successful Launch:{{eachLaunch.launch_success}}</p>    
+    <p class="card-text description"> Successful Landing:{{eachLaunch.offer}}</p>
+
+  </div>
+</div>

@@ -1,0 +1,8 @@
+<div class="container"  style="background-color: #F5F5F5;">
+    <header><h2> SpaceX Launch Programs </h2></header>
+    <div class="row"> 
+        <app-filters class="col-sm-12 col-md-4 col-lg-2" (successfulLandVal)="setLandFilter($event)" (year)="setYearFilter($event)" (yearVal)="setYearValFilter($event)" (successfulLaunchVal)="setLaunchFilter($event)"></app-filters>
+        <app-cards [yearFilter]="yearFilter" [yearFilterVal]="yearFilterVal" [landFilter]="landFilter" [launchFilter]="launchFilter" class="col-sm-12 col-md-8 col-lg-10"></app-cards>
+    </div>
+    <footer class="modal-footer"> Developed By: {{developerName}}</footer>
+</div>

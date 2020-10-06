@@ -1,0 +1,35 @@
+<div  style="background-color: white; padding: 3px; width: auto;">
+    <label class="label-default"><h3>Filters</h3></label>
+
+    <div >
+        <div class="row">
+            <label class="underlined-label">Launch Year</label>
+            <br/>
+            <span class="col-md-6 col-sm-6 col-lg-6" style="margin: 2px 0px ;" *ngFor="let year of years; let i = index;">
+                <button class="btn"  [ngClass]="{'btn-normal': true,  'btn-success': yearsSet[i] }" (click)="setVal(i, 'year')">{{year}}</button>
+            </span>
+        </div>
+
+        <div class="row">
+            <label class="underlined-label">Successful Launch</label>
+            <span class="col-xs-6 col-md-6 col-sm-6 col-lg-6">
+                <button class="btn"  [ngClass]="{'btn-normal': true,  'btn-success': (successfulLaunch === 'true')}" (click)="setVal('True', 'launch')">True</button>
+            </span>
+            <span class="col-xs-6 col-md-6 col-sm-6 col-lg-6">
+                <button class="btn"  [ngClass]="{'btn-normal': true,  'btn-success': (successfulLaunch === 'false')}" (click)="setVal('False', 'launch')">False</button>
+            </span>
+        </div>
+
+        <div class="row">
+            <label class="underlined-label">Successful Landing</label>
+            <span class="col-xs-6 col-md-6 col-sm-6 col-lg-6">
+                <button class="btn"  [ngClass]="{'btn-normal': true,  'btn-success': (successfulLand === 'true')}" (click)="setVal('True', 'land')">True</button>
+            </span>
+            <span class="col-xs-6 col-md-6 col-sm-6 col-lg-6">
+                <button class="btn"  [ngClass]="{'btn-normal': true,  'btn-success': (successfulLand === 'false')}" (click)="setVal('False', 'land')">False</button>
+            </span>
+            
+        </div>
+
+    </div>
+</div>
